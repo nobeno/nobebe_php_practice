@@ -68,7 +68,25 @@
         }
         echo "<br>";
     }
+?>
 
+<table border="1">
+<?php
+    
+    for ($i=1; $i <= 9 ; $i++) { 
+        echo '<tr align="center">';
+        for ($j=1; $j <= 9; $j++) {
+            $total = $i * $j; 
+            echo '<td>'.$total.'</td>';
+            }
+        }
+        echo "<tr>";
+    
+?>
+</table>
+
+
+<?php
     //問題８
     $prinmeNumbers = [];
 
@@ -85,7 +103,7 @@
     }
 
     print_r($prinmeNumbers);
-
+?>
 
 
 
